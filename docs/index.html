@@ -392,6 +392,7 @@
         <meter id="Energy" min="0" max="100" low="25" high="80" value="55">At 55/100</meter><br>
         <label for="aqua-select">Choose an aquatic animal</label>
         <select id="aqua-select">
+            <!--<selectedcontent></selectedcontent>-->
             <optgroup label="Fish">
                 <option>Salmon</option>
                 <option>Dogfish</option>
@@ -409,26 +410,25 @@
             <output name="result" for="a b">40</output>
         </form>
         <label for="download-progress">Download progress</label>
-        <progress id="file" max="100" value="45">45%</progress><br>
-
-        <select id="myCustomSelect">
-        <button>
-            <selectedcontent></selectedcontent>
-        </button>
-        <option value="html">
-            **HTML**
-        </option>
-        <option value="css">
-            CSS
-        </option>
-        <option value="javascript">
-            JavaScript
-        </option>
-        </select><br>
+        <progress id="download-progress" max="100" value="45">45%</progress><br>
 
         <label for="story">Tell me your story</label><br>
         <textarea id="story" name="story" rows="10" cols="40">
             And so it began... The nightmare before the Day-Nightmare-Time-Dream
-        </textarea>
+        </textarea><br>
+        <img src="Forms-pass.png" alt="Forms elements pass validation check">
+
+        <h3>Interactive elements</h3>
+        <details>
+            <summary>Details</summary>
+            Somehting small bit of information
+        </details>
+        <dialog open>
+            <p>They are coming for you</p>
+            <form method="dialog">
+                <button>Well thats not good</button>
+            </form>
+        </dialog>
+        <img src="Interactive-element-pass.png" alt="Interactive element elements pass validation check">
     </body>
 </html>
