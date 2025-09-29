@@ -308,12 +308,14 @@
             <caption>
                 San Diego Beach Ratings
             </caption>
-            <tr>
-                <td></td>
-                <th scope="col" class="O.B">O.B</th>
-                <th scope="col" class="P.B">P.B</th>
-                <th scope="col" class="M.B">M.B</th>
-            </tr>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th scope="col" class="O.B">O.B</th>
+                    <th scope="col" class="P.B">P.B</th>
+                    <th scope="col" class="M.B">M.B</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
                     <th scope="row">Waves</th>
@@ -328,6 +330,14 @@
                     <td>9/10</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td>4.5/10</td>
+                    <td>7/10</td>
+                    <td>5.5/10</td>
+                </tr>
+            </tfoot>
         </table><br>
 
         <table>
@@ -355,6 +365,70 @@
             </tr>
         </table>
         <img src="Table-Content-Pass.png" alt="Table Content elements pass validation check">
+        <h3>Forms</h3>
+        <button type="button">Press me!</button>
+        <label for="Best-color">Pick a Color</label>
+        <input list="colors" id="Best-color" name="Best-color">
+        <datalist id="colors">
+            <option value="Red"></option>
+            <option value="Orange"></option>
+            <option value="Yellow"></option>
+            <option value="Green"></option>
+            <option value="Blue"></option>
+            <option value="Purple"></option>
+        </datalist>
+        <form>
+            <fieldset>
+                <legend>Favorite Beach</legend>
+                <input type="radio" id="O.B" name="Beach">
+                <label for="O.B">Ocean Beach</label><br>
+                <input type="radio" id="P.B" name="Beach">
+                <label for="P.B">Pacific Beach</label><br>
+                <input type="radio" id="M.B" name="Beach">
+                <label for="M.B">Mission Beach</label><br>
+            </fieldset>
+        </form><br>
+        <label for="Energy">Energy</label>
+        <meter id="Energy" min="0" max="100" low="25" high="80" value="55">At 55/100</meter><br>
+        <label for="aqua-select">Choose an aquatic animal</label>
+        <select id="aqua-select">
+            <optgroup label="Fish">
+                <option>Salmon</option>
+                <option>Dogfish</option>
+                <option>Mackeral</option>
+            </optgroup>
+            <optgroup label="Nudibranch">
+                <option>Spanish Dancer</option>
+                <option>Sea Bunny</option>
+                <option>Pikachu Nudibranch</option>
+            </optgroup>
+        </select>
+        <form id="addition">
+            <input type="range" id="a" name="a" value="0"> +
+            <input type="number" id="b" name="b" value="40"> =
+            <output name="result" for="a b">40</output>
+        </form>
+        <label for="download-progress">Download progress</label>
+        <progress id="file" max="100" value="45">45%</progress><br>
 
+        <select id="myCustomSelect">
+        <button>
+            <selectedcontent></selectedcontent>
+        </button>
+        <option value="html">
+            **HTML**
+        </option>
+        <option value="css">
+            CSS
+        </option>
+        <option value="javascript">
+            JavaScript
+        </option>
+        </select><br>
+
+        <label for="story">Tell me your story</label><br>
+        <textarea id="story" name="story" rows="10" cols="40">
+            And so it began... The nightmare before the Day-Nightmare-Time-Dream
+        </textarea>
     </body>
 </html>
