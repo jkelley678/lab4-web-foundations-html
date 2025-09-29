@@ -4,7 +4,7 @@
         <title>This is a TITLE</title>
         <meta charset="UTF-8">
         <meta name= "viewport" content=" width = device-width, initial-scale = 1.0" >
-        <base href="https://www.youtube.com/watch?v=Aq5WXmQQooo&list=RDAq5WXmQQooo&start_radio=1">
+        <!--<base href="https://www.youtube.com/watch?v=Aq5WXmQQooo&list=RDAq5WXmQQooo&start_radio=1"> -->
         <link href="https://abcnews.go.com/US/oj-simpson-trial-now/story?id=17377772" rel="Must Click!!">
     </head>
     <body>
@@ -160,7 +160,135 @@
             <li>8</li>
         </ul>
         <img src="Text-content-pass.png" alt="Text context validation pass">
-    </body>
-        
 
+        <h3>Inline Text Semantics</h3>
+        <a href="2254977551">Phone</a>
+        <p> Everything here is <abbr>IS</abbr> (In style). Sometimes <b>people</b> can be pretty, but others can be <bdi class="name">Steve Deeve: Self proclaimed gajillionaire</bdi></p>
+        <bdo dir="rtl">Help me!!! The sand dollars are coming, and we aren't ready yet.</bdo>
+        <p> One Two Three,<br> Four Five<br> Six, Seven Eight <br>Nine Ten. <br>Please click <cite><a href="https://www.zaerltd.com/prod-196-1-3365-133/21-tall-spring-gnome-garden-statue-holding-two-buckets.htm">Me!</a></cite>
+        Unless you plan to <code>push()</code> me <data value="1123">around</data>. <dfn id="Thing-you-put-soup-in">Can</dfn> You promise me that?
+        <em>You can't?</em><i>I can't believe that.</i> That seriously irks me off. Please can you <kbd>do</kbd> <kbd>it</kbd>? You <mark>can</mark>? Thank you!
+        </p>
+        
+        <p>Quote quote <q>Quote</q></p>
+        <ruby>Wie<rp>(</rp><rt>Vee</rt><rp>)</rp> Viel <rp>(</rp><rt>feel</rt><rp>)</rp></ruby>
+        <s>Don't cross me out</s>
+        <p>When I was running around, I <samp>Fell!</samp></p>
+        <small>I am so so so small please help</small><br>
+        <span class="ingredient">Relish</span> <span class="ingredient">Popcorn</span>
+        <strong> yelling!!!</strong> <sub>not yelling</sub><br>
+        <p>2<sup>2</sup> plus 3<sup>2</sup> is 13 and it is currently <time datetime="2025-09-25"> September 25</time> where I am<br>
+        I don't know why I would underline spelling <u>misaktes</u> instead of <var>fixing</var> them
+        schwarz<wbr>wälder<wbr> kirsch<wbr>torte<br>
+        <img src="Inline-text-semantics-pass.png" alt="Inline Test Semantic elements pass">
+        </p>
+        <h3> Image and Multimedia</h3>
+        <map name="Wikihow-Quiz">
+            <area
+                shape="rect"
+                coords="0,0,100,50"
+                href="https://www.wikihow.com/How-Will-I-Die/docs/Web/Javascript"
+                alt="Wkihow quiz">
+            <area
+                shape="rect"
+                coords="100,0,200,50"
+                href="https://www.wikihow.com/How-Will-I-Die/docs/Web/Javascript"
+                alt="Wkihow quiz"
+            >
+            <area
+                shape="rect"
+                coords="0,50,100,100"
+                href="https://www.wikihow.com/How-Will-I-Die/docs/Web/Javascript"
+                alt="Wkihow quiz"
+            >
+            <area
+                shape="rect"
+                coords="100,50,200,100"
+                href="https://www.wikihow.com/How-Will-I-Die/docs/Web/Javascript"
+                alt="Wkihow quiz"
+            >
+        </map>
+        <img
+            usemap="#Wikihow-Quiz"
+            src="2021-02-10.png"
+            alt="Wikihow Quiz" >
+        <figure>
+            <figcaption>Listen to man screaming</figcaption>
+            <audio controls src="Man-Screaming.mp3"></audio>
+            <a href="Man-Screaming.mp3">Download audio</a>
+        </figure>
+        <video controls src="DJI_0011.MP4" width="750">
+            <track kind="metadata" src="keyStage.vtt" srclang="en" label="Key Stage 1">
+        </video>
+        <h3>Embedded Content</h3>
+        <embed
+            type="image/jpeg"
+            src="DJI_0022.JPG"
+            width="200"
+            height="200"
+            alt="Sunset in Canada">
+            <br>
+        <!--<fencedframe title="My Box" width="600" height="400"></fencedframe>--> <br>
+        <iframe id="Somewhere" title="Somewhere in some place" width="900" height="400" src="https://en.wikipedia.org/wiki/Dog"></iframe><br>
+        <object
+            type="video/MP4"
+            data="DJI_0010.MP4"
+            width="300"
+            height="300"></object><br>
+        <picture>
+            <source
+            srcset="DJI_0025.JPG"
+                type="image/jpeg">
+            <img src="DJI_0025.JPG" width="300" height="200" alt="Video of something. Pretty dark, so it's ahrd to tell">
+        </picture>
+        <img src="Embedded-Content-pass.png" alt="Embedded Content Pass">
+        <h3>SVG and MathML</h3>
+        <svg
+            viewBox="0 0 300 100"
+            stroke="red"
+            fill="grey">
+            <circle cx="50" cy="50" r="40"></circle>
+            <circle cx="100" cy="50" r="10"></circle>
+        </svg>
+        <br>
+        <br>
+    
+        <math display="block">
+            <mrow>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mrow>
+                            <mo>-</mo>
+                            <mi>b</mi>
+                        </mrow>
+                        <mo>±</mo>
+                        <msqrt>
+                            <mrow>
+                                <msup>
+                                    <mi>b</mi>
+                                    <mn>2</mn>
+                                </msup>
+                                <mo>-</mo>
+                                <mrow>
+                                    <mn>4</mn>
+                                    <mo></mo>
+                                    <mi>a</mi>
+                                    <mo></mo>
+                                    <mi>c</mi>
+                                </mrow>
+                            </mrow>
+                        </msqrt>
+                    </mrow>
+                    <mrow>
+                        <mn>2</mn>
+                        <mo></mo>
+                        <mi>a</mi>
+                    </mrow>
+                </mfrac>
+            </mrow>
+        </math>
+        <br>
+    </body>
 </html>
